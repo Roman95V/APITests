@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace APITests
 {
-    public static class Class2
+    public static class AuthRequest
     {
         public static ClientAuthModel SendRequestClientSingUpPost(Dictionary<string, string> user)
         {

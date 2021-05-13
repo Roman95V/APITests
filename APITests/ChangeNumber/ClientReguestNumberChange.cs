@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace APITests
 {
-    public static class Class1
+    public static class ClientReguestNumberChange
     {
-        public static string SendRequestClientEmailPost(string password, string phone_number, string token)
+        public static string SendRequestClientPhoneNumberPost(string password, string phone_number, string token)
         {
             var client = new RestClient("https://api.newbookmodels.com/api/v1/client/change_phone/");
             var request = new RestRequest(Method.POST);
@@ -28,7 +28,7 @@ namespace APITests
             var response = client.Execute(request);
             var newNumber = JsonConvert.DeserializeObject<ClientAuthModel>(response.Content);
 
-            return newNumber.Phone_number;
+            return newNumber.PhoneNumber;
         }
     }
 }

@@ -16,10 +16,10 @@ namespace APITests
             var request = new RestRequest(Method.POST);    
             var user = new Dictionary<string, string>    
             { 
-                { "email", $"asda2sd2asd{DateTime.Now:ddyyyymmHHssmm}@gmail.com" },           
-                { "first_name", "asdasdasd" },            
-                { "last_name", "asdasdasd" },             
-                { "password", "123qweQWE" },             
+                { "email", $"Will{DateTime.Now:ddyyyymmHHssmm}@gmail.com" },           
+                { "first_name", "Will" },            
+                { "last_name", "Smith" },             
+                { "password", "123qweQWE1" },             
                 { "phone_number", "3453453454" }             
             };
             
