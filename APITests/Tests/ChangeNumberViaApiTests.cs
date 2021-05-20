@@ -10,7 +10,7 @@ namespace APITests
     public class ChangeNumberViaApiTests
     {
         [Test]
-        public void CheckForSuccessfulPhoneNumberReplacemen()
+        public void CheckedForSuccessfulPhoneNumberReplacemen()
         {
             var user = new Dictionary<string, string>
             {
@@ -22,7 +22,7 @@ namespace APITests
             };
             var createdUser = AuthRequest.SendRequestClientSingUpPost(user);
 
-            var chengedNumber = ClientReguestNumberChange.SendRequestClientPhoneNumberPost("123qweQWE!", "1111111111", createdUser.TokenData.Token);
+            string chengedNumber = ClientReguestNumberChange.SendRequestClientPhoneNumberPost("123qweQWE!", "1111111111", createdUser.TokenData.Token);
 
             Assert.AreEqual("1111111111", chengedNumber);
         }

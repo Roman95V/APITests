@@ -9,8 +9,9 @@ namespace APITests
 {
     public class ChangeEmailViaApiTests
     {
+      
         [Test]
-        public void CheckForSuccessfulEmailChange()
+        public void CheckedForSuccessfulEmailChange()
         {
             var expactedEmail = $"asda2sd2asd{DateTime.Now:ddyyyymmHHssmm}@asdasd.ert";
 
@@ -23,7 +24,8 @@ namespace APITests
                 { "phone_number", "3453453454" }
             };
             var createdUser = AuthRequests.SendRequestClientSingUpPost(user);
-            var chengedEmail = ClientReguests.SendRequestClientEmailPost("123qweQWE!", expactedEmail, createdUser.TokenData.Token);
+            var clientReguests = new clientReguests();
+            var chengedEmail = clientReguests.SendRequestClientEmailPost("123qweQWE!", expactedEmail, createdUser.TokenData.Token);
 
             Assert.AreEqual(expactedEmail, chengedEmail);
         }

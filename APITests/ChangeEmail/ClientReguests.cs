@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace APITests
 {
-    public static class ClientReguests
+    public class clientReguests
     {
-        public static string SendRequestClientEmailPost(string password, string email, string token)
+        public string SendRequestClientEmailPost(string password, string email, string token)
         {
             var client = new RestClient("https://api.newbookmodels.com/api/v1/client/change_email/");
             var request = new RestRequest(Method.POST);

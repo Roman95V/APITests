@@ -19,7 +19,7 @@ namespace APITests
                 { "email", $"Will{DateTime.Now:ddyyyymmHHssmm}@gmail.com" },           
                 { "first_name", "Will" },            
                 { "last_name", "Smith" },             
-                { "password", "123qweQWE1" },             
+                { "password", "123qweQWE!" },             
                 { "phone_number", "3453453454" }             
             };
             

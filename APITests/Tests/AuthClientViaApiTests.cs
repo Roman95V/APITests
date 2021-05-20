@@ -30,7 +30,7 @@ namespace APITests
             request.AddHeader("content-type", "application/json");
             request.AddJsonBody(user);
             request.RequestFormat = DataFormat.Json;
-            var response = client.Execute(request);
+            client.Execute(request);
         }
     }
 }
